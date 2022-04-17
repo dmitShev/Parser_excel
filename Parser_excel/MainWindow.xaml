@@ -1,0 +1,59 @@
+﻿<Window x:Class="Parser_excel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Parser_excel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="5">
+            <StackPanel HorizontalAlignment="Center">
+                <Border BorderBrush="#FF613871" BorderThickness="0,0,0,5" Height="58" Width="778">
+                    <WrapPanel VerticalAlignment="Center" RenderTransformOrigin="0.408,0.542" HorizontalAlignment="Center" Width="778">
+                        <TextBox Height="30" x:Name="txtFilePath" Width="288" FontSize="15" Opacity="1" Background="#FFDEDEDE" >
+                            <TextBox.Effect>
+                                <DropShadowEffect/>
+                            </TextBox.Effect>
+                        </TextBox>
+                        <Button Content="Загрузить файл" x:Name="buttonDownload" Width="168" FontSize="15" Height="30" FontWeight="Bold" Click="buttonDownload_Click" Background="#FFF2CEFD" BorderBrush="#FF792020" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                        <Button Content="Краткий вывод" FontSize="15" Height="30" FontWeight="Bold" x:Name="buttonShortOutput" Width="156" Background="#FF90FFC0" Click="buttonShortOutput_Click" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                        <Button Content="Полный вывод" FontSize="15" Height="30" FontWeight="Bold" x:Name="buttonFullOutput" Width="165" Background="#FF9DFFC7" Click="buttonFullOutput_Click" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                        <Button Content="Обновление данных" FontSize="15" Height="30" FontWeight="Bold" x:Name="buttonRefresh" Width="288" Background="#FFCAD7FF" Click="buttonResfresh_Click" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                        <Button Content="Экспорт" FontSize="15" Height="30" FontWeight="Bold" x:Name="buttonClose" Width="168" Background="#FFC597FF" Click="ExportToExcel_Click" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                        <Button Content="Закрыть программу" FontSize="15" Height="30" FontWeight="Bold" x:Name="buttonExportToExcel" Width="321" Background="#FFFF7A7A" Click="buttonClose_Click" >
+                            <Button.Effect>
+                                <DropShadowEffect/>
+                            </Button.Effect>
+                        </Button>
+                    </WrapPanel>
+                </Border>
+                <ScrollViewer Name="scroll" CanContentScroll="True" Height="786" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" Width="1280">
+                    <DataGrid AutoGenerateColumns="True" IsReadOnly="True" HorizontalAlignment="Center" Name="dtGrid" VerticalAlignment="Center" FontSize="10" />
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>

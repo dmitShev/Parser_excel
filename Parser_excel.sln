@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser_excel", "Parser_excel\Parser_excel.csproj", "{1517E453-D18B-4068-BEA9-90AA09DED53B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1517E453-D18B-4068-BEA9-90AA09DED53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1517E453-D18B-4068-BEA9-90AA09DED53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1517E453-D18B-4068-BEA9-90AA09DED53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1517E453-D18B-4068-BEA9-90AA09DED53B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C56AC72B-F02A-4248-B3BA-1DE6275268D0}
+	EndGlobalSection
+EndGlobal
